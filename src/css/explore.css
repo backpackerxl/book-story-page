@@ -1,0 +1,142 @@
+@import url(../../static/css/init.css);
+@import url(../../static/css/public.css);
+@import url(../../static/css/addbook.css);
+@import url(../../static/css/tabbar.css);
+@import url(../../static/css/menu.css);
+
+.b-search {
+    padding: .8rem 2.4rem;
+    height: 4.8rem;
+}
+
+.b-search .search {
+    position: relative;
+    width: 27.2rem;
+    height: 3.2rem;
+    border: .2rem solid var(--main-gray-300);
+    border-radius: .4rem;
+    color: var(--main-gray-400);
+    box-sizing: border-box;
+    line-height: 3.2rem;
+}
+
+.b-search .search i {
+    position: absolute;
+    font-size: 1.4rem;
+    left: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.b-search .search input {
+    position: absolute;
+    top: 0;
+    left: 4rem;
+    outline: none;
+    border: none;
+    height: inherit;
+    background: transparent;
+    width: calc(100% - 4rem);
+}
+
+.b-recommendation {
+    padding-left: 2.4rem;
+    margin-top: 1.6rem;
+    height: 26rem;
+    border-bottom: .2rem solid var(--main-gray-300);
+}
+
+.b-recommendation h1 {
+    height: 3.2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+.b-recommendation .list {
+    padding: .8rem 0;
+    overflow: auto;
+    display: flex;
+}
+
+.b-recommendation .list .box {
+    width: 8rem;
+    margin-right: 1.6rem;
+}
+
+.b-recommendation .list .box .img {
+    position: relative;
+}
+
+.b-recommendation .list .box .img .add {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.box .content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--main-gray-600);
+}
+
+.box .content p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: var(--main-gray-400);
+}
+
+.b-news-politics {
+    padding: 0 2.4rem;
+    margin-top: .8rem;
+}
+
+.b-news-politics .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.b-news-politics .top h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+
+.b-news-politics .top a {
+    color: var(--main-blue-500);
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.b-news-politics .list-warrper {
+    margin-bottom: 8.5rem;
+}
+
+.b-news-politics .list-warrper .list {
+    background: var(--main-gray-100);
+    padding: 1.6rem;
+    border-radius: .4rem;
+}
+
+.list-warrper .list .box {
+    position: relative;
+    display: flex;
+    margin-bottom: .8rem;
+    min-height: 4.8rem;
+    align-items: center;
+}
+
+.list-warrper .list .box .right-content {
+    margin-left: .8rem;
+}
+
+.list-warrper .list .box .add {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translateY(calc(-50% - 20px));
+}

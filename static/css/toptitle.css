@@ -1,0 +1,24 @@
+.b-top-title {
+    height: 4rem;
+    padding: 1rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-top-title .txt {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--main-gray-400);
+}
+
+.b-top-title .delete-list {
+    outline: none;
+    border: none;
+    background: var(--main-red-400);
+    width: 6.4rem;
+    height: 2.4rem;
+    border-radius: .4rem;
+    color: var(--main-white);
+    font-size: 1.2rem;
+}

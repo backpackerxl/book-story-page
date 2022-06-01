@@ -1,0 +1,68 @@
+.add {
+    position: relative;
+}
+
+.add label {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: var(--main-white);
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.add input[type='checkbox'] {
+    display: none;
+}
+
+.add input[type='checkbox']:checked~label {
+    background: var(--main-green-500);
+    transition: all .2s;
+}
+
+.add label span::after,
+.add label span::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 4px;
+    background: var(--main-green-500);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.add label span::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.add input[type='checkbox']:checked~label svg {
+    opacity: 1;
+}
+
+.add label svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .2s;
+}
+
+.add input[type='checkbox']:checked~label svg .tick {
+    stroke-dasharray: 193;
+    stroke-dashoffset: 193;
+    animation: tick .6s ease-in forwards;
+    animation-delay: .2s;
+}
+
+@keyframes tick {
+    0% {
+        stroke-dashoffset: 193;
+    }
+
+    100% {
+        stroke-dashoffset: 167;
+    }
+}

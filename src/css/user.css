@@ -1,0 +1,204 @@
+@import url(../../static/css/init.css);
+@import url(../../static/css/public.css);
+@import url(../../static/css/menu.css);
+
+.b-top-information {
+    margin-top: .8rem;
+    padding: 0 2.4rem;
+}
+
+.b-top-information h1,
+.b-global-func h1 {
+    font-size: 1.8rem;
+    height: 4.4rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    color: var(--main-gray-800);
+}
+
+.b-top-information .information {
+    padding: 0.8rem 0;
+    text-align: center;
+}
+
+.b-top-information .information .img {
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+    border-radius: calc(8rem / 2);
+}
+
+.information .img img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.information .content .name {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--main-gray-700);
+}
+
+.information .content .email {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--main-gray-500);
+}
+
+.information .sing-out {
+    display: inline-block;
+    margin-top: .8rem;
+    width: 8rem;
+    height: 3.2rem;
+    background: var(--main-red-400);
+    color: var(--main-white);
+    border-radius: 1.6rem;
+    line-height: 3.2rem;
+    text-align: center;
+}
+
+.b-option-func {
+    padding: .8rem 3.2rem;
+}
+
+.func-user li .me,
+.func-global .me {
+    display: inline-block;
+    height: 2.4rem;
+    width: 2.4rem;
+    transform: translateY(.5rem);
+    margin-right: .4rem;
+}
+
+.func-user li .me.me-update-nickname {
+    background: url(../../static/icon/user_person.svg) no-repeat;
+}
+
+.func-user li .me.me-update-password {
+    background: url(../../static/icon/user_key.svg) no-repeat;
+}
+
+.func-user li .me.me-email {
+    background: url(../../static/icon/user_envelope.svg) no-repeat;
+}
+
+.func-user li a {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--main-green-500);
+}
+
+.b-option-func ul li {
+    height: 3.2rem;
+    padding: .6rem .4rem;
+}
+
+.b-global-func {
+    margin-top: .8rem;
+    padding: .8rem 2.4rem;
+}
+
+.func-global {
+    position: relative;
+    width: 25.6rem;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    padding: 0 .8rem;
+    transform: translateY(-.6rem);
+}
+
+.func-global .me-right-func {
+    transform: translateY(1rem);
+    background: url(../../static/icon/user_arrow_bar_right.svg) no-repeat;
+}
+
+.func-global .txt {
+    color: var(--main-green-500);
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+.func-global label {
+    position: absolute;
+    padding: .4rem;
+    width: inherit;
+}
+
+.func-global .slider {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.func-global .slider .slider-child {
+    display: inline-block;
+    position: relative;
+    width: 3.2rem;
+    height: 1.8rem;
+    background: var(--main-gray-200);
+    border-radius: 1.2rem;
+    transition: all .1s;
+}
+
+.func-global .slider .slider-child::after {
+    position: absolute;
+    height: 1.4rem;
+    border-radius: .7rem;
+    content: "";
+    background: var(--main-white);
+    top: .2rem;
+}
+
+.func-global input[type="checkbox"] {
+    display: none;
+}
+
+.func-global input[type="checkbox"]:checked+.slider .slider-child {
+    background: var(--main-green-500);
+}
+
+.func-global input[type="checkbox"]+.slider .slider-child::after {
+    animation: ShortToLong .4s ease-out forwards;
+    animation-delay: .12s;
+}
+
+.func-global input[type="checkbox"]:checked+.slider .slider-child::after {
+    animation: LongToShort .4s ease-out forwards;
+    animation-delay: .12s;
+}
+
+@keyframes LongToShort {
+    0% {
+        width: 1.4rem;
+        transform: translateX(.2rem);
+    }
+
+    10%,
+    60% {
+        width: 1.8rem;
+    }
+
+    100% {
+        width: 1.4rem;
+        transform: translateX(1.6rem);
+    }
+}
+
+@keyframes ShortToLong {
+    0% {
+        width: 1.4rem;
+        transform: translateX(1.6rem);
+    }
+
+    10%,
+    90% {
+        width: 1.8rem;
+    }
+
+    100% {
+        width: 1.4rem;
+        transform: translateX(.2rem);
+    }
+}

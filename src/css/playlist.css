@@ -1,0 +1,38 @@
+@import url(../../static/css/init.css);
+@import url(../../static/css/public.css);
+@import url(../../static/css/playlistbox.css);
+@import url(../../static/css/toptitle.css);
+@import url(../../static/css/menu.css);
+
+.b-play-list .box .top {
+    position: relative;
+}
+
+.b-play-list .box .top i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-gray-400);
+}
+
+.box .option-icon .player-option.active {
+    background: var(--main-green-500);
+    color: var(--main-white);
+    padding-left: .8rem;
+    border: none;
+}
+
+.option-icon .player-option.active .me-playing {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    top: 50%;
+    transform: translateY(30%);
+    margin: 0;
+    background: url(../../static/icon/playing_down_up.svg);
+}
+
+.option-icon .player-option.active .me-playing::after {
+    border: none;
+}

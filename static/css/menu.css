@@ -1,0 +1,82 @@
+.b-top-bar .menu-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70vw;
+    background: var(--main-white);
+    z-index: 9999;
+    box-shadow: var(--main-black-shadow);
+    transition: all .4s ease-in-out;
+    transform: translateX(-80vw);
+}
+
+.b-top-bar .menu-left.active {
+    transform: translateX(0);
+}
+
+.menu-left .close-icon {
+    color: var(--main-gray-400);
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.menu-left .close-icon .fa-close {
+    background: var(--main-white);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    padding-right: .5rem;
+    line-height: 2rem;
+    opacity: .5;
+}
+
+.menu-left .user {
+    background: url(../../static/img/user_bg.webp) no-repeat;
+    height: 10rem;
+    background-size: cover;
+    background-position-x: center;
+    padding: .8rem;
+    margin-bottom: .8rem;
+}
+
+.menu-left .user .img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0 .8rem;
+}
+
+.menu-left .user .img img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.menu-left .user .name {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: var(--main-white);
+    padding: 0 .8rem;
+}
+
+.menu-left .menu_list {
+    padding: 0 .8rem;
+}
+
+.menu-left .menu_list li {
+    line-height: 2rem;
+    padding: .8rem;
+    font-size: 1.4rem;
+    color: var(--main-gray-500);
+}
+
+.menu-left .menu_list li.active {
+    background: var(--main-gray-200);
+    border-radius: 2rem;
+    opacity: .8;
+}
+
+.menu-left .menu_list li .txt {
+    margin-left: .8rem;
+}

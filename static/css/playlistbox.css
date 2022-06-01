@@ -1,0 +1,115 @@
+.b-play-list {
+    padding: .8rem 0;
+}
+
+.b-play-list .box {
+    padding: 1.6rem 0;
+    border-bottom: .1rem solid var(--main-gray-200);
+}
+
+.b-play-list .box .inner-warrper {
+    padding: 0 2.4rem;
+}
+
+.b-play-list {
+    margin-bottom: 8rem;
+}
+
+.b-play-list .box .top {
+    display: flex;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.b-play-list .box .top img {
+    margin-right: .8rem;
+}
+
+.b-play-list .box .top .title {
+    color: var(--main-gray-500);
+    font-weight: 700;
+}
+
+.b-play-list .box .top .subtext {
+    color: var(--main-gray-400);
+}
+
+.b-play-list .box h2 {
+    margin-top: .8rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: var(--main-gray-800);
+}
+
+.b-play-list .box p {
+    line-height: 2rem;
+    font-size: 1.4rem;
+    color: var(--main-gray-400);
+}
+
+.b-play-list .box .option-icon {
+    margin-top: .8rem;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.box .option-icon .player-option {
+    height: inherit;
+    max-width: 18rem;
+    border: .1rem solid var(--main-gray-200);
+    border-radius: .4rem;
+    line-height: 2.8rem;
+    color: var(--main-gray-400);
+    padding-left: 1.2rem;
+    padding-right: .5rem;
+}
+
+.option-icon .player-option i.fa-play,
+.option-icon .player-option i.me-playing {
+    position: relative;
+    color: var(--main-green-500);
+    margin-right: .6rem;
+}
+
+.option-icon .player-option i.fa-play::after {
+    position: absolute;
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -22%);
+    border: .16rem solid var(--main-green-500);
+}
+
+.option-icon .me {
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+    transform: translateY(10%);
+    margin-left: .8rem;
+}
+
+.option-icon .me-list {
+    background: url(../icon/sub_add_list.svg) no-repeat;
+}
+
+.option-icon .me-download {
+    background: url(../icon/sub_download.svg) no-repeat;
+}
+
+.option-icon .me-box {
+    background: url(../icon/download_list_box.svg) no-repeat;
+}
+
+.option-icon .me-list.fail {
+    background: url(../icon/download_list_remove.svg) no-repeat;
+}
+
+.option-icon .me-star {
+    background: url(../icon/sub_star.svg) no-repeat;
+    transform: translateY(15%);
+}

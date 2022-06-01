@@ -1,0 +1,26 @@
+.b-top-bar {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.b-top-bar .fa-ellipsis-vertical {
+    margin-left: 2.5rem;
+    padding: .8rem;
+}
+
+.b-top-bar .fa-list {
+    margin-right: 2.5rem;
+}
+
+.b-top-bar .fa-bullseye {
+    margin-right: 2.5rem;
+}
+
+.b-top-bar h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}

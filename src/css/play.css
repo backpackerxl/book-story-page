@@ -1,0 +1,254 @@
+@import url(../../static/css/init.css);
+@import url(../../static/css/public.css);
+@import url(../../static/css/menu.css);
+
+.b-container {
+    overflow: hidden;
+}
+
+.cover-img-txt {
+    text-align: center;
+    transition: all .2s;
+}
+
+.cover-img-txt .img {
+    height: 12.8rem;
+    width: 12.8rem;
+    display: inline-block;
+}
+
+.cover-img-txt .img img {
+    transform: scale(1.6) translateY(1.4rem);
+}
+
+.cover-img-txt h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.cover-img-txt p {
+    font-size: 1.6rem;
+    color: var(--main-green-300);
+    line-height: 2.4rem;
+}
+
+.b-player {
+    height: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b-player .b-progess {
+    position: relative;
+    width: 23.8rem;
+}
+
+.b-player .b-progess .b-progess-cache,
+.b-player .b-progess .b-progess-sloid {
+    height: .4rem;
+    border-radius: .2rem;
+}
+
+.b-player .b-progess .b-progess-cache {
+    width: inherit;
+    background-color: var(--main-green-300);
+}
+
+.b-player .b-progess .b-progess-sloid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-green-500);
+}
+
+.b-progess .b-progess-sloid::after {
+    content: "";
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    border-radius: .4rem;
+    top: 0;
+    right: 0;
+    transform: translateY(-.2rem);
+    background-color: var(--main-green-500);
+}
+
+.b-player .option {
+    font-size: 2.4rem;
+    color: var(--main-green-500);
+}
+
+.b-player .option.b-right i {
+    margin-right: 1rem;
+    transform: rotate(-45deg);
+}
+
+.b-player .option.b-left i {
+    margin-left: 1rem;
+    transform: rotate(45deg);
+}
+
+.b-play-icon {
+    height: 3.6rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.b-play-icon .me-play-moon,
+.b-play-icon .me-play-dashboard,
+.b-play-icon .me-play-star,
+.b-play-icon .me-play-ellipsis,
+.b-play-icon .me-play-box {
+    display: inline-block;
+    width: 2.1rem;
+    height: 2.1rem;
+}
+
+.b-play-icon .me-play-moon {
+    background: url(../../static/icon/bi_play_moon_stars.svg) no-repeat;
+    background-size: 2rem;
+}
+
+.b-play-icon .me-play-dashboard {
+    background: url(../../static/icon/bi_play_speedometer.svg) no-repeat;
+    background-size: 2rem;
+}
+
+.b-play-icon .me-play-star {
+    background: url(../../static/icon/bi_play_star.svg) no-repeat;
+    background-size: 2rem;
+}
+
+.b-play-icon .me-play-ellipsis {
+    background: url(../../static/icon/bi_play_three_dots.svg) no-repeat;
+    background-size: 2rem;
+}
+
+.b-play-icon .me-play-box {
+    background: url(../../static/icon/bi_play_page_box.svg) no-repeat;
+    background-size: 2rem;
+}
+
+.b-play-list {
+    padding: .8rem 0;
+    width: 67.2rem;
+    display: flex;
+}
+
+.b-play-list .box {
+    position: relative;
+    width: 20.4rem;
+    height: 12rem;
+    background-color: var(--main-gray-50);
+    padding: 1rem;
+    margin-left: 1.5rem;
+    transition: all .2s;
+}
+
+.b-play-list .box {
+    transform: translateX(calc(var(--translateXPercent)*-18rem));
+}
+
+.b-play-list .box:last-child {
+    margin-right: 1.5rem;
+}
+
+.b-play-list .box p.line {
+    position: absolute;
+    width: 5rem;
+    height: calc(var(--height)*0.1rem);
+    border-radius: .2rem;
+    background-color: var(--main-gray-400);
+    top: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s;
+}
+
+.box .content h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    user-select: none;
+    color: var(--main-gray-800);
+}
+
+.box .content p {
+    text-align: justify;
+}
+
+.b-play-list .box .content {
+    height: 8.5rem;
+    margin-top: 2.5rem;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.box.now .content ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem 0;
+}
+
+.box.now .content ul span.txt {
+    margin-left: .2rem;
+}
+
+.box.now .content ul span.txt span.mark {
+    color: var(--main-green-300);
+}
+
+.box.now .content ul span.tag {
+    height: 2.4rem;
+    padding: .4rem .8rem;
+    color: var(--main-white);
+    border-radius: .4rem;
+    line-height: 1.8rem;
+    margin: .2rem;
+    background: var(--main-green-500);
+}
+
+.box.next .content ul li {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    border-radius: .2rem;
+    background-color: var(--main-white);
+    margin: .5rem 0;
+}
+
+.box.next .content ul div.tag {
+    position: relative;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: .2rem;
+    background-color: var(--main-yellow);
+    margin-right: .5rem;
+}
+
+.box.next .content ul div.tag::before,
+.box.next .content ul div.tag::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .8rem;
+}
+
+.box.next .content ul div.tag::after {
+    top: .5rem;
+    width: .8rem;
+    border-radius: 50%;
+    border: .2rem solid var(--main-white);
+}
+
+.box.next .content ul div.tag::before {
+    top: 1.6rem;
+    width: .2rem;
+    background-color: var(--main-white);
+}

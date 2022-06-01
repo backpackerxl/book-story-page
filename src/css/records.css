@@ -1,0 +1,114 @@
+@import url(../../static/css/init.css);
+@import url(../../static/css/public.css);
+@import url(../../static/css/tabbar.css);
+@import url(../../static/css/toptitle.css);
+@import url(../../static/css/menu.css);
+
+
+.b-top-bar .me-record {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 2.5rem;
+    background: url(../../static/icon/record_filter.svg);
+}
+
+.b-tab-bar ul li {
+    margin-right: calc(var(--marginLeft)*1px);
+}
+
+.b-tab-bar ul li {
+    color: var(--main-gray-300);
+}
+
+.b-tab-bar ul li .me-box,
+.b-tab-bar ul li.active .me-box {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.2rem;
+    transform: translateY(.2rem);
+    object-fit: cover;
+}
+
+.b-tab-bar ul li .me-box {
+    background: url(../../static/icon/record_box.svg) no-repeat;
+}
+
+.b-tab-bar ul li.active .me-box {
+    background: url(../../static/icon/record_box_active.svg) no-repeat;
+}
+
+.b-tab-bar ul li.active {
+    color: var(--main-green-500);
+}
+
+.b-tab-bar ul li.fail {
+    margin-right: 0;
+}
+
+.b-play-list {
+    margin-bottom: 8rem;
+    padding: .8rem 0;
+}
+
+.b-play-list .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 0;
+    border-bottom: .1rem solid var(--main-gray-200);
+}
+
+.b-play-list .box .left {
+    padding-left: 2.4rem;
+    display: flex;
+}
+
+.box .left img {
+    height: 5.6rem;
+    margin-right: .8rem;
+}
+
+.box .left .title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: var(--main-gray-600);
+}
+
+.box .left .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: var(--main-gray-400);
+}
+
+.box .left .subtext {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: var(--main-gray-300);
+}
+
+.box .left .option-icon {
+    margin-left: .8rem;
+}
+
+.box .left .me-box,
+.box .left .me-star {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.box .left .me-box {
+    background: url(../../static/icon/record_box.svg) no-repeat;
+    transform: translateY(.2rem);
+}
+
+.box .left .me-star {
+    background: url(../../static/icon/record_star.svg) no-repeat;
+}
+
+.b-play-list .box .fa-trash-can {
+    padding-right: 2.4rem;
+    color: var(--main-red-400);
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索页</title>
+    <link rel="stylesheet" href="css/explore.css">
+    <script type="text/javascript" src="../static/js/style.js"></script>
+</head>
+
+<body>
+    <div class="b-container">
+        <section id="cover"></section>
+        <section class="b-top-bar">
+            <i id="menu_open" class="fa-solid fa-ellipsis-vertical"></i>
+            <h2>探索</h2>
+            <a href="./playlist.html">
+                <i class="fa-solid fa-list"></i>
+            </a>
+            <div id="menu_list" class="menu-left">
+                <div class="user">
+                    <div class="close-icon">
+                        <i class="fa-solid fa-close"></i>
+                    </div>
+                    <div class="img">
+                        <img src="../static/img/user_avater.png">
+                    </div>
+                    <h2 class="name">Benbinbin</h2>
+                </div>
+                <ul class="menu_list">
+                    <a href="./subscription.html">
+                        <li>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="txt">订阅</span>
+                        </li>
+                    </a>
+                    <a href="./explore.html">
+                        <li class="active">
+                            <i class="fa-brands fa-wpexplorer"></i>
+                            <span class="txt">探索</span>
+                        </li>
+                    </a>
+                    <a href="./records.html">
+                        <li>
+                            <i class="fa-regular fa-rectangle-list"></i>
+                            <span class="txt">记录</span>
+                        </li>
+                    </a>
+                    <a href="./user.html">
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="txt">设置</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="b-search">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="搜索">
+            </div>
+        </section>
+
+        <section class="b-tab-bar">
+            <ul style="--offsetWidth: 0; --offsetLeft: 0; --marginLeft: 16;">
+                <li>
+                    <a href="#">为您推荐</a>
+                </li>
+                <li>
+                    <a href="#">新闻与政治</a>
+                </li>
+                <li>
+                    <a href="#">社会与文化</a>
+                </li>
+                <li>
+                    <a href="#">财经</a>
+                </li>
+                <li>
+                    <a href="#">科技</a>
+                </li>
+                <span class="line-bottom"></span>
+            </ul>
+        </section>
+
+        <section class="b-recommendation">
+            <h1>为您推荐</h1>
+            <div class="list">
+                <div class="box">
+                    <div class="img">
+                        <a href="#">
+                            <img src="../static/img/exp_cover1.png" alt="">
+                        </a>
+                        <div class="add">
+                            <input type="checkbox" id="rec-check1" checked>
+                            <label for="rec-check1">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Data Skeptic</h3>
+                        <p>Kyle Polich</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <a href="#">
+                            <img src="../static/img/exp_cover2.png" alt="">
+                        </a>
+                        <div class="add">
+                            <input type="checkbox" id="rec-check2">
+                            <label for="rec-check2">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>下一本讀什麼？</h3>
+                        <p>閱讀前哨站 瓦基</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <a href="#">
+                            <img src="../static/img/exp_cover3.png" alt="">
+                        </a>
+                        <div class="add">
+                            <input type="checkbox" id="rec-check3">
+                            <label for="rec-check3">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>晨早新聞天地</h3>
+                        <p>RTHK</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <a href="#">
+                            <img src="../static/img/exp_cover4.png" alt="">
+                        </a>
+                        <div class="add">
+                            <input type="checkbox" id="rec-check4">
+                            <label for="rec-check4">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>大内密谈</h3>
+                        <p>大内密谈</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b-news-politics">
+            <div class="top">
+                <h1>新闻与政治</h1>
+                <a href="#">更多</a>
+            </div>
+            <div class="list-warrper">
+                <div class="list">
+                    <div class="box">
+                        <div class="img">
+                            <img src="../static/img/exp_list_cover1.png">
+                        </div>
+                        <div class="right-content">
+                            <h2>Data Skeptic</h2>
+                            <p>Kyle Polich</p>
+                        </div>
+                        <div class="add">
+                            <input type="checkbox" id="pol-check1" checked>
+                            <label for="pol-check1">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="../static/img/exp_list_cover1.png">
+                        </div>
+                        <div class="right-content">
+                            <h2>Data Skeptic</h2>
+                            <p>Kyle Polich</p>
+                        </div>
+                        <div class="add">
+                            <input type="checkbox" id="pol-check2">
+                            <label for="pol-check2">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="../static/img/exp_list_cover1.png">
+                        </div>
+                        <div class="right-content">
+                            <h2>Data Skeptic</h2>
+                            <p>Kyle Polich</p>
+                        </div>
+                        <div class="add">
+                            <input type="checkbox" id="pol-check3">
+                            <label for="pol-check3">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="../static/img/exp_list_cover1.png">
+                        </div>
+                        <div class="right-content">
+                            <h2>Data Skeptic</h2>
+                            <p>Kyle Polich</p>
+                        </div>
+                        <div class="add">
+                            <input type="checkbox" id="pol-check4">
+                            <label for="pol-check4">
+                                <span></span>
+                                <svg width="25" height="25">
+                                    <polyline fill="none" stroke="#fff" stroke-width="2.5" points="4,13 9,18 20,7"
+                                        stroke-linecap="round" stroke-linejoin="round" class="tick" />
+                                </svg>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="b-player-play">
+            <div class="play-view">
+                <span class="prefix">Hidden Brain - </span>
+                <span class="suffix">You 2.0: Did That Re</span>
+            </div>
+            <div id="me_progess_line" class="me-progess active" style="--height: 2">
+                <div class="b-progess-cache"></div>
+                <div style="width: 50%;" class="b-progess-sloid"></div>
+            </div>
+            <div class="player-view">
+                <div class="img-cover">
+                    <a href="./play.html?bookname=下一本讀什麼%3F&author=瓦基&bookcover=../static/img/exp_cover2.png">
+                        <img src="../static/img/exp_cover.png">
+                    </a>
+                </div>
+                <div class="middle-option">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <div class="play">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="right-search">
+                </div>
+            </div>
+        </section>
+
+        <script src="../static/js/player.js"></script>
+        <script src="../static/js/tab-swiper.js"></script>
+        <script src="../static/js/main-menu.js"></script>
+    </div>
+</body>
+
+</html>

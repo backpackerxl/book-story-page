@@ -1,0 +1,39 @@
+.b-tab-bar {
+    height: 2.2rem;
+    padding-left: 2.4rem;
+    border-bottom: .2rem solid var(--main-gray-300);
+}
+
+.b-tab-bar ul {
+    position: relative;
+    transition: all .2s;
+}
+
+.b-tab-bar ul li {
+    position: relative;
+    float: left;
+    height: 2.2rem;
+    margin-right: calc(var(--marginLeft)*1px);
+    line-height: 1.6rem;
+}
+
+.b-tab-bar ul li a {
+    color: var(--main-gray-500);
+    transition: all .2s;
+}
+
+.b-tab-bar ul li.active a {
+    color: var(--main-green-500);
+}
+
+.b-tab-bar ul .line-bottom {
+    position: absolute;
+    top: 1.9rem;
+    left: calc(var(--offsetLeft)*1px);
+    background-color: var(--main-green-500);
+    width: calc(var(--offsetWidth)*1px);
+    height: .3rem;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    transition: all .2s;
+}
