@@ -81,7 +81,7 @@
     border-radius: 50%;
     top: 0;
     left: 0;
-    transform: translate(-30%, -22%);
+    transform: translate(-.65rem, -.5rem);
     border: .16rem solid var(--main-green-500);
 }
 

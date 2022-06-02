@@ -89,7 +89,7 @@ const $ref = (function () {
                     if (e.target.classList.value === 'line') {
                         return;
                     }
-                    doc.documentElement.scrollTop = 0;
+                    document.documentElement.scrollTo(0, 0);
                     menu_list.classList.add('active');
                     cover.classList.add('cover');
                     doc.querySelector('body').style.overflow = 'hidden';
