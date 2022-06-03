@@ -42,7 +42,7 @@
 *>a:active,
 *>a:visited {
     text-decoration: none;
-    color: #444;
+    color: var(--main-black);
 }
 
 *::-webkit-scrollbar {

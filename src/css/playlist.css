@@ -30,7 +30,7 @@
     top: 50%;
     transform: translateY(30%);
     margin: 0;
-    background: url(../../static/icon/playing_down_up.svg);
+    background: url(../../static/icon/playing_down_up.svg) no-repeat;
 }
 
 .option-icon .player-option.active .me-playing::after {

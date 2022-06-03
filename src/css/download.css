@@ -10,7 +10,7 @@
     width: 2.4rem;
     height: 2.4rem;
     margin-right: 2.5rem;
-    background: url(../../static/icon/download_download.svg);
+    background: url(../../static/icon/download_download.svg) no-repeat;
 }
 
 .b-tab-bar ul li {
